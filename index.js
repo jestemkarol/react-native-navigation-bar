@@ -3,8 +3,7 @@
  */
 
 import React, {
-	Component,
-	PropTypes
+	Component
 } from 'react';
 
 import {
@@ -16,6 +15,8 @@ import {
 	Dimensions,
 	Platform
 } from 'react-native';
+
+import PropTypes from 'prop-types'; 
 
 let width = Dimensions.get('window').width;
 
@@ -130,7 +131,7 @@ export default class NavigationBar extends Component{
 };
 
 let styles = StyleSheet.create({
-	container: { 
+	container: {
 		flex: 1,
 		position: 'absolute',
 		top: 0,
